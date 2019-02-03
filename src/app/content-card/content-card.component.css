@@ -3,7 +3,6 @@ div.content-card {
     border-width: 5px;
     height: 250px;
     line-height: 12px;
-    border-color: aquamarine;
 }
 
 div.content-card img {
@@ -11,7 +10,13 @@ div.content-card img {
 }
 
 div.content-card.last {
-    border-width: 2px;
-    border-color: black;
+    border-width: 3px;
 }
 
+div.content-card.news {
+    border-color: green;
+}
+
+div.content-card.story {
+    border-color: blue;
+}

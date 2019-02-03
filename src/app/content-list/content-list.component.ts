@@ -15,38 +15,41 @@ export class ContentListComponent implements OnInit {
           author: 'Me',
           imgUrl: 'https://angular.io/assets/images/logos/angular/angular.png',
           body: 'something something',
-          type: 'AHAHHAHAHHA'
+          type: 'news'
       };
       this.content1[1] = {
           contentId: 13371,
           author: 'You',
           imgUrl: 'https://angular.io/assets/images/logos/angular/angular.png',
           body: 'something thing',
-          type: 'AHAHHAHdsdAHHA'
+          type: 'story'
       };
       this.content1[2] = {
           contentId: 13372,
           author: 'He',
           imgUrl: 'https://angular.io/assets/images/logos/angular/angular.png',
           body: 'something some',
-          type: 'AHAHHAHsvderbewrwAHHA'
+          type: 'news'
       };
       this.content1[3] = {
           contentId: 13373,
           author: 'She',
           imgUrl: 'https://angular.io/assets/images/logos/angular/angular.png',
           body: 'thing something',
-          type: 'AHAHHAHAtuytmyerv234HHA'
+          type: 'news'
       };
       this.content1[4] = {
           contentId: 13374,
           author: 'Be',
           imgUrl: 'https://angular.io/assets/images/logos/angular/angular.png',
           body: 'some something',
-          type: 'AHAHHAHdcqwewcq1AHHA'
+          type: 'story'
       };
   }
   ngOnInit() {
       console.log(this.content1);
+  }
+  search(x: string){
+
   }
 }
