@@ -1,6 +1,6 @@
 <form>
   <label form="search">Search: </label>
-  <input type="string">
+  <input [(ngModel)]="type"> {{type}}
   <button (click)="search()">Search</button>
 </form>
 <p>

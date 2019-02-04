@@ -49,7 +49,4 @@ export class ContentListComponent implements OnInit {
   ngOnInit() {
       console.log(this.content1);
   }
-  search(x: string){
-
-  }
 }
