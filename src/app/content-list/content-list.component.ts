@@ -49,4 +49,11 @@ export class ContentListComponent implements OnInit {
   ngOnInit() {
       console.log(this.content1);
   }
+
+  search(x: string){
+      for (let cell of this.content1)
+          if (cell.type == x) {
+              console.log(cell);
+          }
+  }
 }
