@@ -1,5 +1,13 @@
-<div class="content-card" [ngClass]="{'last': last}">
-  <img src="{{stuff.imgUrl}}" alt="{{stuff.body}}" (click)="clicked()">
+<div class="content-card" [ngClass]="{'last': last, 'news': type== 'news', 'story': type== 'story'}" >
+  <p appTextDecoration [Some] = '"underline"'>
+    {{stuff.title}}
+  </p>
+  <div *ngIf='stuff.imgUrl'>
+    <img src="{{stuff.imgUrl}}" alt="{{stuff.body}}" (click)="clicked()">
+  </div>
+  <div *ngIf='!stuff.imgUrl'>
+    <img src="https://bulma.io/images/bulma-logo.png">
+  </div>
   <p class="body">
     {{stuff.body}}
   </p>
@@ -15,7 +23,7 @@
   <p>
     {{stuff.type}}
   </p>
-  <p>
+  <p appTextDecoration [Some] = '"line-through"'>
     {{stuff.tags}}
   </p>
 </div>
